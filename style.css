@@ -1,0 +1,12 @@
+#header{
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    height: 15vh;
+}
+/* Navigation list formatting */
+#header ul li{
+    list-style-type: none;
+    width: 150px;
+    display: inline-block;
+}
