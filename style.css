@@ -1,12 +1,90 @@
+/* Navigation Header formatting */
 #header{
-    background-color: lightgray;
+    background-color: #EAA056; /*also used as the hover color for contacts*/
+    border: 2px navy solid;
     width: 100%;
     text-align: center;
     height: 15vh;
+}
+#header ul{
+    width: 100%;
+    padding: 0;
+}
+#header li{
+    margin-top: 2vh;
+    font-size: 2.5vh;
 }
 /* Navigation list formatting */
 #header ul li{
     list-style-type: none;
     width: 150px;
     display: inline-block;
+    color: navy;
+    font-weight: 600;
+}
+#header ul li a:hover{
+    border: 1px navy dotted;
+    color: white;
+
+}
+/* Main Content formatting */
+header{
+    font-size: 4vh;
+    font-weight: 600;
+    color: navy;
+}
+#name{
+    text-align: center;
+    margin: 2%;
+    font-size: 5vh;
+}
+
+/* About Me section formatting */
+.basic_info{
+    text-indent: 3em;
+}
+/* Skill section formatting */
+#skill_list{
+    list-style-type: upper-roman;
+}
+
+/* Experience section formatting */
+#experience_list{
+    list-style-type: none;
+}
+/* Job Position & Time Frame */
+.co_basic_info{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10vw;
+}
+/* Job description */
+.co_description{
+    list-style-type: none;
+}
+/* Responsibilities list */
+#experience_list li:nth-child(4){
+    list-style-type: disc;
+}
+/* Contact section formatting */
+#info_for_contact{
+    text-align: center;
+}
+.contacts{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5vw;
+    text-align: center;
+}
+.contacts a{
+    color: navy;
+}
+.contacts a:hover{
+    border: 1px navy dotted;
+    color: #EAA056;
+}
+form{
+    margin-left: 5vw;
+    border: 1px navy solid;
+    padding: 1%;
 }
