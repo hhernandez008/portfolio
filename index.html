@@ -18,13 +18,17 @@
 
     <!-- Main Content -->
     <div id="main_content">
-        <header id="name">
+        <h1 id="name">
             Heather Hernandez
-        </header>
+        </h1>
 
         <!-- About Me section -->
         <section>
-            <header><a id="about_me">About Me</a></header>
+            <h1>
+                <a id="about_me">
+                    About Me
+                </a>
+            </h1>
             <!-- Short Bio -->
             <p class="basic_info">
                 I earned my bachelors degree in information technology from Western Governors University. I am currently
@@ -48,7 +52,11 @@
 
         <!-- Sills section -->
         <section>
-        <header><a id="skills">Skills</a></header>
+        <h1>
+            <a id="skills">
+                Skills
+            </a>
+        </h1>
         <!-- Skills I want to gain by the end of the LearningFuze course. -->
             <ol id="skill_list">
                 <li>
@@ -75,10 +83,14 @@
 
         <!-- Experience section -->
         <section>
-            <header><a id="experience">Experience</a></header>
+            <h1>
+                <a id="experience">
+                    Experience
+                </a>
+            </h1>
             <!-- Previous jobs &amp a description of my responsibilities/work. -->
             <ul id="experience_list">
-                <li>
+                <li> <!-- Camco Experience -->
                     <strong>Camco Pacific Construction Company, Inc.</strong>
                     <ul>
                         <li class="co_basic_info">
@@ -112,8 +124,8 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li><!-- End Camco Experience -->
+                <li><!-- AAA NCNU Experience -->
                     <strong>AAA of Northern California, Nevada, &amp Utah</strong>
                     <ul>
                         <li class="co_basic_info">
@@ -148,8 +160,8 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li>
+                </li><!-- End AAA NCNU Experience-->
+                <li><!-- Anheuser Experience -->
                     <strong>Anheuser-Busch Packaging Group</strong>
                     <ul>
                         <li class="co_basic_info">
@@ -181,13 +193,17 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
+                </li><!-- End Anheuser Experience -->
+            </ul><!-- End #experience_list -->
         </section>
 
         <!-- Contact Me section -->
         <section>
-            <header><a id="contact_me">Contact Me</a></header>
+            <h1>
+                <a id="contact_me">
+                    Contact Me
+                </a>
+            </h1>
             <!-- Contact information and professional profiles. -->
             <ul id="info_for_contact">
                 <!-- Email -->
@@ -210,8 +226,28 @@
                 </li>
             </ul>
             <!-- Contact Form -->
-            <form>Contact Form:
-                <p>Coming Soon</p>
+            <form action="http://learningfuze.com/echo.php" method="post">
+                Contact Form
+                <br>
+                <label for="name_id">
+                    Name:
+                </label>
+                <input type="text" name="user_name" id="name_id" placeholder="Name">
+                <br>
+                <label for="email_address">
+                    E-mail Address:
+                </label>
+                <input type="email" name="email_address" id="email_address" placeholder="E-mail">
+                <br>
+                <label for="message">
+                    Message:
+                </label>
+                <br>
+                <textarea id="message" rows="10" cols="35">
+                </textarea>
+                <br>
+                <input type="submit" value="Enter">
+
             </form>
         </section>
     </div>

@@ -1,3 +1,7 @@
+div#main_content{
+    font-size: 100%;
+}
+
 /* Navigation Header formatting */
 #header{
     background-color: #EAA056; /*also used as the hover color for contacts*/
@@ -12,7 +16,7 @@
 }
 #header li{
     margin-top: 2vh;
-    font-size: 2.5vh;
+    font-size: 100%;
 }
 /* Navigation list formatting */
 #header ul li{
@@ -28,20 +32,20 @@
 
 }
 /* Main Content formatting */
-header{
-    font-size: 4vh;
+h1{
+    font-size: 150%;
     font-weight: 600;
     color: navy;
 }
 #name{
     text-align: center;
     margin: 2%;
-    font-size: 5vh;
+    font-size: 200%;
 }
 
 /* About Me section formatting */
 .basic_info{
-    text-indent: 3em;
+    text-indent: 2em;
 }
 /* Skill section formatting */
 #skill_list{
@@ -83,8 +87,15 @@ header{
     border: 1px navy dotted;
     color: #EAA056;
 }
+/* Form input formatting */
 form{
     margin-left: 5vw;
     border: 1px navy solid;
+    width: 50%;
     padding: 1%;
+}
+form input{
+    width: 30%;
+    padding: 1%;
+    margin: 2%;
 }
