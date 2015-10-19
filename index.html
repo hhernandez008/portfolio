@@ -3,17 +3,43 @@
 <head>
     <title>Portfolio - Heather Hernandez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Script Libraries: JQuery, Custom -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="main.js"></script>
+    <!-- Stylesheets: Bootstrap & Custom -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Page Header -->
     <div id="header">
         <!-- Page navigation -->
-        <ul>
-            <li><a href="#about_me">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact_me">Contact Me</a></li>
+        <ul id="nav">
+            <li>
+                <a href="#about_me">
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    Skills
+                </a>
+            </li>
+            <li>
+                <a href="#experience">
+                    Experience
+                </a>
+            </li>
+            <li>
+                <a href="#education_certs">
+                    Education &amp; Certifications
+                </a>
+            </li>
+            <li>
+                <a href="#contact_me">
+                    Contact Me
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -24,11 +50,9 @@
         </h1>
 
         <!-- About Me section -->
-        <section>
+        <section id="about_me">
             <h1>
-                <a id="about_me">
                     About Me
-                </a>
             </h1>
             <!-- Short Bio -->
             <p class="basic_info">
@@ -52,11 +76,9 @@
         </section>
 
         <!-- Sills section -->
-        <section>
+        <section id="skills">
         <h1>
-            <a id="skills">
                 Skills
-            </a>
         </h1>
         <!-- Skills I want to gain by the end of the LearningFuze course. -->
             <ol id="skill_list">
@@ -83,21 +105,19 @@
         </section>
 
         <!-- Experience section -->
-        <section>
+        <section id="experience">
             <h1>
-                <a id="experience">
-                    Experience
-                </a>
+                Experience
             </h1>
             <!-- Previous jobs & a description of my responsibilities/work. -->
             <ul id="experience_list">
                 <li> <!-- Camco Experience -->
                     <strong>Camco Pacific Construction Company, Inc.</strong>
                     <ul>
-                        <li class="co_basic_info">
+                        <li class="li_basic_info">
                             Accounting Clerk
                         </li>
-                        <li class="co_basic_info">
+                        <li class="li_basic_info">
                             April 2011 - September 2015
                         </li>
                         <li class="co_description">
@@ -129,10 +149,10 @@
                 <li><!-- AAA NCNU Experience -->
                     <strong>AAA of Northern California, Nevada, &amp; Utah</strong>
                     <ul>
-                        <li class="co_basic_info">
+                        <li class="li_basic_info">
                             Administrative Assistant
                         </li>
-                        <li class="co_basic_info">
+                        <li class="li_basic_info">
                             December 2007 - February 2010
                         </li>
                         <li class="co_description">
@@ -165,10 +185,10 @@
                 <li><!-- Anheuser Experience -->
                     <strong>Anheuser-Busch Packaging Group</strong>
                     <ul>
-                        <li class="co_basic_info">
+                        <li class="li_basic_info">
                             Human Resources Administrate Assistant
                         </li>
-                        <li class="co_basic_info">
+                        <li class="li_basic_info">
                             April 2006 - September 2007
                         </li>
                         <li class="co_description">
@@ -198,12 +218,67 @@
             </ul><!-- End #experience_list -->
         </section>
 
-        <!-- Contact Me section -->
-        <section>
+        <!-- Education & Certifications -->
+        <section id="education_certs">
             <h1>
-                <a id="contact_me">
-                    Contact Me
-                </a>
+                Education &amp; Certifications
+            </h1>
+            <ul id="edu">
+                <li>
+                    Western Governors University
+                </li>
+                <li>
+                    Bachelor of Science in Information Technology
+                </li>
+                <li>
+                    2014
+                </li>
+            </ul>
+            <ul id="certs">
+                <!-- CIW Certs -->
+                <li>
+                    <strong>CIW Certifications</strong>
+                    <ul>
+                        <li>
+                            <img src="images/web_foundations_assoc.jpg" alt="CIW Web Foundations Associate">
+                        </li>
+                        <li>
+                            <img src="images/web_design_spec.jpg" alt="CIW Web Design Specialist">
+                        </li>
+                        <li>
+                            <img src="images/javascript_sp.jpg" alt="CIW JavaScript Specialist">
+                        </li>
+                        <li>
+                            <img src="images/database_sp.jpg" alt="CIW Database Design Specialist">
+                        </li>
+                    </ul>
+                </li>
+                <!-- CompTIA Certs -->
+                <li>
+                    <strong>CompTIA Certifications</strong>
+                    <ul>
+                        <li>
+                            <img src="images/A+%20Certified.jpg" alt="CompTIA A+">
+                        </li>
+                        <li>
+                            <img src="images/Project+%20Certified.jpg" alt="CompTIA Project+">
+                        </li>
+
+                        <li>
+                            <img src="images/NetworkPlus_Certified_CE_Logo.jpg" alt="CompTIA Network+">
+                        </li>
+                        <li>
+                            <img src="images/SecurityPlus_Certified_CE_Logo.jpg" alt="CompTIA Security+">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Me section -->
+        <section id="contact_me">
+            <h1>
+                Contact Me
             </h1>
             <!-- Contact information and professional profiles. -->
             <ul id="info_for_contact">

@@ -1,33 +1,37 @@
 div#main_content{
     font-size: 100%;
+    margin: 0 1%;
+}
+/* Links */
+a:link, a:visited{
+    color: #000080;
+    text-decoration: underline;
 }
 
 /* Navigation Header */
 #header{
-    background-color: #EAA056; /*also used as the hover color for contacts*/
-    border: 2px navy solid;
+    background-color: #FFBD5C;
+    border: 2px #000080 solid;
     width: 100%;
     text-align: center;
     height: 15vh;
 }
-#header ul{
+#nav{
     width: 100%;
     padding: 0;
 }
-#header li{
-    margin-top: 2vh;
-    font-size: 100%;
-}
 /* Navigation list */
-#header ul li{
+#nav li{
+    margin-top: 2.5vh;
+    font-size: 100%;
     list-style-type: none;
     width: 150px;
     display: inline-block;
-    color: navy;
+    color: #000080;
     font-weight: 600;
 }
-#header ul li a:hover{
-    border: 1px navy dotted;
+#header li a:hover{
+    border: 1px #000080 dotted;
     color: white;
 
 }
@@ -35,7 +39,7 @@ div#main_content{
 h1{
     font-size: 150%;
     font-weight: 600;
-    color: navy;
+    color: #000080;
 }
 #name{
     text-align: center;
@@ -56,8 +60,8 @@ h1{
 #experience_list{
     list-style-type: none;
 }
-/* Job Position & Time Frame */
-.co_basic_info{
+/* Titles & Dates */
+.li_basic_info{
     list-style-type: none;
     display: inline-block;
     margin-right: 10vw;
@@ -70,6 +74,23 @@ h1{
 #experience_list li:nth-child(4){
     list-style-type: disc;
 }
+/* Education & Certification section */
+#edu li{
+    display: inline-block;
+}
+#certs{
+    padding: 0 2%;
+}
+#certs li{
+    display: inline-block;
+    list-style: none;
+}
+#certs li img{
+    /*width: 10vw;*/
+    display: inline-block;
+    height: 5vw;
+    margin: 0 2%;
+}
 /* Contact section */
 #info_for_contact{
     text-align: center;
@@ -80,12 +101,9 @@ h1{
     margin: 0 10vw;
     text-align: center;
 }
-.contacts a{
-    color: navy;
-}
 .contacts a:hover{
-    border: 1px navy dotted;
-    color: #EAA056;
+    border: 1px #000080 dotted;
+    color: #E65C00;
 }
 /* Form input */
 form{
