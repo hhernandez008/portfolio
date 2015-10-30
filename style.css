@@ -75,22 +75,7 @@ h1{
     list-style-type: disc;
 }
 /* Education & Certification section */
-#edu li{
-    display: inline-block;
-}
-#certs{
-    padding: 0 2%;
-}
-#certs li{
-    display: inline-block;
-    list-style: none;
-}
-#certs li img{
-    /*width: 10vw;*/
-    display: inline-block;
-    height: 5vw;
-    margin: 0 2%;
-}
+
 /* Contact section */
 #info_for_contact{
     text-align: center;
@@ -176,3 +161,28 @@ form input:last-of-type{
         box-sizing: content-box;
     }
 } /* End breakpoint */
+
+
+/* Education & Certification section */
+#edu li{
+    display: inline-block;
+}
+#certs{
+    padding: 0 2%;
+}
+#certs div{
+    display: inline-block;
+}
+/*#certs img{*/
+    /*display: inline-block;*/
+    /*height: 90px;*/
+/*}*/
+#ciw div, #ciw img{
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+}
+#compTia{
+
+}
