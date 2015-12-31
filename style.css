@@ -1,12 +1,13 @@
 body{
     margin: 0;
+    font-family: "Fira Sans", Arial, sans-serif;
 }
 /* Navigation */
 .navCol{
     width: 180px;
     height: 100vh;
     position: fixed;
-    background-color: #404040;
+    background-color: #141019;
     z-index: 500;
     text-align: center;
 }
@@ -26,7 +27,7 @@ body{
 }
 .links, .links a{
     color: #E57A8B;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 .links a{
     padding: 5%;
@@ -35,19 +36,18 @@ body{
 }
 .links a:hover{
     text-decoration: none;
-    border: 2px solid #2C7D6B;
+    border: 2px solid #911B2E;
     border-radius: 4px;
 }
 a.smWords{
     position: relative;
     top: 0;
-    font-size: 12px;
+    font-size: 0.7em;
 }
 a.smWords:hover{
     border: none;
     text-decoration: underline;
 }
-
 
 
 /* Body */
@@ -59,7 +59,18 @@ a.smWords:hover{
 .page{
     height: 100vh;
 }
+.secTitle{
+    height: 12vh;
+    padding: 2%;
+    text-align: center;
+    font-family: Cardo, "Book Antiqua", serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #E57A8B;
+    background-color: #141019;
+}
 
+/* header image */
 #top{
     background: url("images/sky.jpg") no-repeat;
     background-size: 100% 100%;
@@ -73,31 +84,19 @@ a.smWords:hover{
     transform: translateY(-50%);
 }
 #nameTitle{
+    font-family: Cardo, "Book Antiqua", serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3em;
 }
 .subTitle{
-    font-size: 20px;
+    font-size: 2em;
 }
 
 
 
 /* ~~ COLOR PALETTE ~~ */
 /* As hex codes */
-
-.color-primary-0 { color: #2C7D6B }	/* Main Primary color */
-.color-primary-1 { color: #98CBBF }
-.color-primary-2 { color: #539C8C }
-.color-primary-3 { color: #136351 }
-.color-primary-4 { color: #003E30 }
-
-.color-secondary-1-0 { color: #C29344 }	/* Main Secondary color (1) */
-.color-secondary-1-1 { color: #FFE7BF }
-.color-secondary-1-2 { color: #F2C881 }
-.color-secondary-1-3 { color: #9A6B1D }
-.color-secondary-1-4 { color: #603C00 }
-
-.color-secondary-2-0 { color: #B74053 }	/* Main Secondary color (2) */
+.color-secondary-2-0 { color: #B74053 }	/* Main color */
 .color-secondary-2-1 { color: #F7B9C3 }
 .color-secondary-2-2 { color: #E57A8B }
 .color-secondary-2-3 { color: #911B2E }
