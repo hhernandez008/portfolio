@@ -7,24 +7,27 @@
     display: inline-flex;
 }
 .compScreen{
-    width: 40%;
-    background: url("images/monitorScreen.png") no-repeat;
-    background-size: contain;
+    width: 45%;
+    /*background: url("images/monitorScreen.png") no-repeat;*/
+    /*background-size: contain;*/
     position: relative;
-    top: 10%;
+    top: 8%;
     right: 43%;
+}
+.compScreen img{
+    width: 100%;
 }
 .description{
     width: 50%;
-    height: 60%;
+    height: 50%;
     border: 15px double #141019;
     border-radius: 15px;
     background: rgba(157, 156, 156, 0.8);
     padding: 2%;
     padding-left: 7%;
     position: relative;
-    top: 30%;
-    left: 43%;
+    top: 44%;
+    left: 45%;
 }
 .projectTitle{
     font-family: Cardo, "Book Antiqua", serif;
