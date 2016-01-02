@@ -4,13 +4,14 @@ body{
 }
 /* Navigation */
 .navCol{
-    width: 180px;
+    width: 160px;
     height: 100vh;
     position: fixed;
     background-color: #141019;
     z-index: 500;
     text-align: center;
 }
+
 .logo{
     width: 100%;
 }
@@ -19,7 +20,7 @@ body{
     margin: 0;
     position: absolute;
     bottom: 0;
-    height: 75%;
+    height: 80%;
     width: 100%;
 }
 .links li{
@@ -28,6 +29,7 @@ body{
 .links, .links a{
     color: #E57A8B;
     font-size: 1.2em;
+    text-decoration: none;
 }
 .links a{
     padding: 5%;
@@ -42,11 +44,36 @@ body{
 a.smWords{
     position: relative;
     top: 0;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 a.smWords:hover{
     border: none;
     text-decoration: underline;
+}
+.links a.currentSection {
+    float: right;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #911B2E;
+    background: #911B2E;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+}
+.currentSection::after{
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #911B2E;
+    border-width: 1.2em;
+}
+.links a.currentSection:hover{
+    background: transparent;
 }
 
 
@@ -54,21 +81,36 @@ a.smWords:hover{
 .mainContent{
     min-height: 100vh;
     position: relative;
-    padding-left: 180px; /* same as width of navCol */
+    padding-left: 160px; /* same as width of navCol */
 }
 .page{
     height: 100vh;
 }
 .secTitle{
-    height: 12vh;
-    padding: 2%;
-    text-align: center;
+    position: relative;
+    height: 3em;
+    padding: 2% 0 5% 0;
+    text-align: right;
+}
+.secTitle text{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 1%;
+    margin: 0;
     font-family: Cardo, "Book Antiqua", serif;
     font-weight: bold;
     font-size: 2em;
-    color: #E57A8B;
-    background-color: #141019;
+    fill: #E57A8B;
 }
+.secTitle polygon{
+    fill: #141019;
+}
+/*.secTitle>img{*/
+    /*width: 75%;*/
+    /*height: 4em;*/
+/*}*/
+
 
 /* header image */
 #top{
@@ -91,8 +133,6 @@ a.smWords:hover{
 .subTitle{
     font-size: 2em;
 }
-
-
 
 /* ~~ COLOR PALETTE ~~ */
 /* As hex codes */
