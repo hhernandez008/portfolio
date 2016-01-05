@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/skills.css">
 
     <title>Heather Hernandez</title>
 </head>
@@ -67,8 +68,14 @@
         <section id="projects" class="page">
             <div class="secTitle">
                 <svg width="60%" height="4em">
-                    <polygon points="0 29 40 0 1000 0 1000 55 40 55"></polygon>
-                    <text x="50%" y="35">Projects</text>
+                    <defs>
+                        <filter id="shadow" width="200%" height="200%">
+                            <feGaussianBlur result="blurOutput" in="SourceGraphic" stdDeviation="8"></feGaussianBlur>
+                        </filter>
+                    </defs>
+                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
+                    <polygon class="arrow" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
+                    <text x="50%" y="55%">Projects</text>
                 </svg>
             </div>
             <div class="sectionBody">
@@ -89,7 +96,7 @@
                     </div>
                 </div>
                 <div class="project" id="calculator"> <!-- CALCULATOR -->
-                    <div class="projectPic">
+                    <div class="projectPic displayBottom">
                         <img src="images/calculatorSquare.png">
                     </div>
                     <div class="projectTitle">
@@ -97,7 +104,7 @@
                     </div>
                 </div>
                 <div class="project" id="ticTacToe"> <!-- TIC-TAC-TOE -->
-                    <div class="projectPic">
+                    <div class="projectPic displayRight">
                         <img src="images/tictactoeSquare.png">
                     </div>
                     <div class="projectTitle">
@@ -117,19 +124,26 @@
         <section id="skills" class="page">
             <div class="secTitle">
                 <svg width="60%" height="4em">
-                    <polygon points="0 29 40 0 1000 0 1000 55 40 55"></polygon>
-                    <text x="50%" y="35">Skill Set</text>
+                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
+                    <polygon class="arrow2" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
+                    <text x="50%" y="55%">Skill Set</text>
                 </svg>
             </div>
             <div class="sectionBody">
-
+                <div class="skill">Skill</div>
+                <div class="skill">Skill</div>
+                <div class="skill">Skill</div>
+                <div class="skill">Skill</div>
+                <div class="skill">Skill</div>
+                <div class="skill">Skill</div>
             </div>
         </section>
         <section id="about" class="page">
             <div class="secTitle">
                 <svg width="60%" height="4em">
-                    <polygon points="0 29 40 0 1000 0 1000 55 40 55"></polygon>
-                    <text x="50%" y="35">About Me</text>
+                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
+                    <polygon class="arrow" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
+                    <text x="50%" y="55%">About Me</text>
                 </svg>
             </div>
             <div class="sectionBody">
@@ -139,8 +153,9 @@
         <section id="contact" class="page">
             <div class="secTitle">
                 <svg width="60%" height="4em">
-                    <polygon points="0 29 40 0 1000 0 1000 55 40 55"></polygon>
-                    <text x="50%" y="35">Contact</text>
+                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
+                    <polygon class="arrow2" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
+                    <text x="50%" y="55%">Contact</text>
                 </svg>
             </div>
             <div class="sectionBody">

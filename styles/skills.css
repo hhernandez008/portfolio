@@ -1,0 +1,54 @@
+#contact{
+    background-color: #3c3c3c;
+}
+#about{
+    background-color: #5B000E;
+}
+/* --------------------------------------------------- */
+
+#skills{
+    background-color: #3c3c3c;
+}
+
+.skill{
+    width: 30%;
+    height: 40%;
+    margin: 2% 1.5% 0 1.5%;
+    /*border: 2px solid #0C032D;*/
+    border-radius: 5px;
+    box-shadow: 0 0 6px #1a1a1a;
+    /*color: #9E3142;*/
+    font-size: 1.5em;
+    font-weight: bold;
+    /*background-color: #140842;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ~~ COLOR PALETTE ~~ */
+/* As hex codes */
+.color-primary-0 { color: #5B000E }	/* Main Primary color */
+.color-primary-1 { color: #9E3142 }
+.color-primary-2 { color: #7B1223 }
+.color-primary-3 { color: #3D000A }
+.color-primary-4 { color: #220005 }
+
+.color-secondary-1-0 { color: #140842 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #3C2D73 }
+.color-secondary-1-2 { color: #24165A }
+.color-secondary-1-3 { color: #0C032D }
+.color-secondary-1-4 { color: #060119 }
+
+/* As RGBa codes */
+.rgba-primary-0 { color: rgba( 91,  0, 14,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(158, 49, 66,1) }
+.rgba-primary-2 { color: rgba(123, 18, 35,1) }
+.rgba-primary-3 { color: rgba( 61,  0, 10,1) }
+.rgba-primary-4 { color: rgba( 34,  0,  5,1) }
+
+.rgba-secondary-1-0 { color: rgba( 20,  8, 66,1) }	/* Main Secondary color (1) */
+.rgba-secondary-1-1 { color: rgba( 60, 45,115,1) }
+.rgba-secondary-1-2 { color: rgba( 36, 22, 90,1) }
+.rgba-secondary-1-3 { color: rgba( 12,  3, 45,1) }
+.rgba-secondary-1-4 { color: rgba(  6,  1, 25,1) }
