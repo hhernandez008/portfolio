@@ -13,10 +13,29 @@
     width: 30%;
     height: 46%;
     margin: 2% 1% 0 1%;
-    padding: 1%;
+    padding: 2% 1%;
     border: 3px solid #0C032D;
     border-radius: 5px;
     background-color: darkgrey;
+    text-align: center;
+}
+.projectPic{
+    width: 96%;
+    height: 80%;
+    margin: 0 2% 5% 2%;
+    overflow: hidden;
+}
+.projectPic>img{
+    width: 200%;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+}
+.projectPic>img:hover{
+    width: 100%;
+    text-align: center;
+    -webkit-filter: blur(2px);
 }
 .projectTitle{
     color: #04010E;
@@ -34,8 +53,6 @@
 }
 .compScreen{
     width: 45%;
-    /!*background: url("images/monitorScreen.png") no-repeat;*!/
-    /!*background-size: contain;*!/
     position: relative;
     top: 8%;
     right: 43%;
