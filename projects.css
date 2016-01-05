@@ -1,15 +1,41 @@
-#work{
+#projects{
     background-color: #5B000E;
 }
+.sectionBody{
+    margin: 3% 5%;
+    height: 75%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .project{
+    width: 30%;
+    height: 46%;
+    margin: 2% 1% 0 1%;
+    padding: 1%;
+    border: 3px solid #0C032D;
+    border-radius: 5px;
+    background-color: darkgrey;
+}
+.projectTitle{
+    color: #04010E;
+    font-family: Cardo, "Book Antiqua", serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* MODAL INDIVIDUAL PROJECTS */
+/*
+.singleProject{
     width: 100%;
     height: 88vh;
     display: inline-flex;
 }
 .compScreen{
     width: 45%;
-    /*background: url("images/monitorScreen.png") no-repeat;*/
-    /*background-size: contain;*/
+    /!*background: url("images/monitorScreen.png") no-repeat;*!/
+    /!*background-size: contain;*!/
     position: relative;
     top: 8%;
     right: 43%;
@@ -28,9 +54,5 @@
     position: relative;
     top: 44%;
     left: 45%;
-}
-.projectTitle{
-    font-family: Cardo, "Book Antiqua", serif;
-    font-weight: bold;
-    font-size: 2em;
-}
+} */
+
