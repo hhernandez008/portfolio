@@ -1,29 +1,51 @@
-#contact{
-    background-color: #3c3c3c;
+.aboutMeText, .skillBox{
+    width: 40%;
+    height: 90%;
+    margin: 2% 4% 0 4%;
 }
-#about{
-    background-color: #5B000E;
+.aboutMeText{
+    padding: 0.5%;
 }
-/* --------------------------------------------------- */
+.aboutMeText>p{
+    margin: 10px;
+}
+.profilePic{
+    width: 50%;
+    float: left;
+    margin: 10px;
+    border: 5px solid #555555;
+    border-radius: 50%;
+}
 
-#skills{
-    background-color: #3c3c3c;
+.resumeBtn{
+    width: 60%;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
-.skill{
-    width: 30%;
-    height: 40%;
-    margin: 2% 1.5% 0 1.5%;
-    /*border: 2px solid #0C032D;*/
-    border-radius: 5px;
-    box-shadow: 0 0 6px #1a1a1a;
-    /*color: #9E3142;*/
-    font-size: 1.5em;
+.skillBox>div{
+    padding: 2%;
+    height: 45%;
+    font-size: 1.2em;
     font-weight: bold;
-    /*background-color: #140842;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.listTitle{
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+.skillBox ul{
+    margin: 0;
+}
+.skillBox>div:first-child{
+    margin-bottom: 5%;
+    height: 50%;
 }
 
 /* ~~ COLOR PALETTE ~~ */

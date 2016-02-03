@@ -3,166 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, user-scalable=no">
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Fira+Sans:400,400italic,700'>
+    <link rel='stylesheet' type='text/css'
+          href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Fira+Sans:400,400italic,700'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/aboutMe.css">
+    <link rel="stylesheet" href="styles/contact.css">
 
+    <link rel="icon" type="image/x-icon" href="images/Hlogo-Black.ico">
     <title>Heather Hernandez</title>
+
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <div class="navCol">
-        <div>
-            <img src="images/hh.png" class="logo">
-        </div>
-        <div class="links">
-            <ul>
-                <li>
-                    <a href="#top">
-                        Home
-                    </a>
-                </li>
-                <li>
-                <a href="#projects" class="currentSection">
-                        Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#skills">
-                        Skill Set
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        About Me
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:hhernandez008@gmail.com" class="smWords">
-                        hhernandez008@gmail.com
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div> <!-- end .navCol -->
+<!-- Navigation -->
+<div class="navCol navbar" role="navigation">
+    <div class="logo">
+        <a href="#top">
+            <img src="images/Hlogo.png">
+        </a>
+    </div>
+    <ul class="nav navbar-nav links">
+        <li class="active">
+            <a href="#top">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#projects">
+                Projects
+            </a>
+        </li>
+        <li>
+            <a href="#about">
+                About Me
+            </a>
+        </li>
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
+        <li class="smWords">
+            &copy; 2016
+            <br>
+            Heather R. Hernandez
+        </li>
+    </ul>
 
-    <div class="mainContent">
-        <section id="top" class="page">
-            <div id="nameTitle">
-                Heather Hernandez
+</div> <!-- end .navCol -->
+
+<div class="mainContent">
+    <section id="top" class="page">
+        <div id="nameTitle">
+            Heather R. Hernandez
+        </div>
+        <div class="subTitle">
+            Front-End Developer
+        </div>
+    </section>
+    <section id="projects" class="page wineBG">
+        <div class="secTitle">
+            <svg width="60%" height="4em">
+                <defs>
+                    <filter id="shadow" width="200%" height="200%">
+                        <feGaussianBlur result="blurOutput" in="SourceGraphic" stdDeviation="8"></feGaussianBlur>
+                    </filter>
+                </defs>
+                <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
+                <polygon class="arrow" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
+                <text x="50%" y="55%">Projects</text>
+            </svg>
+        </div>
+        <div class="sectionBody">
+            <!-- Modal -->
+            <div class="modal fade" id="projectModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                            </button>
+                            <div class="modal-title projectTitle">Modal Header</div>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio dolor, rutrum vitae aliquam et, varius at lorem. Phasellus convallis quam lorem, dapibus ornare mi facilisis eget. Morbi ultricies sem lorem, sit amet mollis dolor pulvinar ac. Nunc lorem risus, varius quis enim ac, tristique accumsan ante. Phasellus in mi mattis, aliquet libero in, ultrices lectus. Sed nec ullamcorper mi. Mauris venenatis interdum molestie. Ut eget mi nec leo tempus consequat. Cras quam arcu, pellentesque id fermentum tincidunt, auctor in nisi. Vestibulum lorem turpis, consectetur eu eros non, malesuada sodales ligula. Etiam efficitur porttitor ex eu eleifend. Etiam dignissim venenatis augue faucibus ornare. Mauris sollicitudin nunc vitae lectus luctus, quis pharetra risus interdum. Nulla ut velit vel nunc volutpat mollis in sodales quam. Maecenas porta ullamcorper diam commodo accumsan. Sed semper, lorem id porttitor porttitor, tellus lectus scelerisque sem, pellentesque tincidunt lacus ligula vel sem.
+                            </p>
+                            <p>
+                                Morbi aliquet felis sit amet justo ultricies feugiat. Aliquam mollis feugiat justo in vehicula. Mauris condimentum varius nibh, sit amet sollicitudin est laoreet quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras convallis, eros vel mattis lacinia, erat enim ultrices magna, in pretium odio nibh a ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut porta nisl efficitur lorem posuere, nec lobortis nibh mollis. Vivamus at risus non arcu lobortis pharetra.
+                            </p>
+                            <p>
+                                Morbi molestie rutrum sem sed malesuada. Maecenas ultrices semper vestibulum. Donec egestas lobortis purus, a consequat ante scelerisque nec. Donec quis lectus pretium, mollis enim eget, gravida velit. Vestibulum consequat tellus et nibh feugiat, ut mattis sapien tincidunt. Praesent egestas odio purus, nec porttitor tellus fermentum et. Morbi augue arcu, blandit non orci luctus, commodo luctus enim.
+                            </p>
+                            <p>
+                                Nulla faucibus mollis accumsan. Nullam malesuada consectetur nunc, vitae porta lacus vulputate ut. Suspendisse dignissim, neque eget ultrices lacinia, nisi velit sagittis tortor, vitae varius lacus felis et mauris. Mauris enim nisi, fermentum vitae placerat eu, aliquet sit amet orci. Duis turpis risus, sollicitudin bibendum elit sit amet, tristique sodales elit. Suspendisse potenti. Curabitur lectus quam, gravida in tellus eu, fringilla mattis mauris. Nulla ornare suscipit ipsum, non dictum erat pulvinar et. Phasellus malesuada interdum lacus in auctor. Nullam mauris neque, pellentesque eu euismod a, faucibus fermentum augue. Etiam ornare ut nunc eget accumsan. Nullam faucibus enim lacus, ut semper dui lobortis ac. Fusce ac eros vestibulum, rhoncus turpis ut, egestas est. Pellentesque vel nunc porttitor urna scelerisque sodales sit amet vitae est. Vivamus ultrices est justo, nec porttitor nunc hendrerit sed. Morbi auctor metus vel arcu pharetra, finibus tempor tellus pretium.
+                            </p>
+                            <p>
+                                Cras cursus ac diam et auctor. Donec nec iaculis diam. Fusce tincidunt elit neque, eu accumsan orci aliquam eget. Nulla lobortis euismod sapien, nec elementum elit lacinia a. Nulla sed quam sed leo malesuada commodo et sit amet arcu. Nam nibh libero, pretium eu nibh a, viverra accumsan eros. Aenean non sem accumsan, finibus sapien sit amet, elementum massa. Vivamus dapibus sapien eget semper interdum. Nam at nisi interdum leo hendrerit sodales. Etiam porttitor in neque in dignissim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque quis varius erat.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="subTitle">
-                Web Developer
-            </div>
-        </section>
-        <section id="projects" class="page">
-            <div class="secTitle">
-                <svg width="60%" height="4em">
-                    <defs>
-                        <filter id="shadow" width="200%" height="200%">
-                            <feGaussianBlur result="blurOutput" in="SourceGraphic" stdDeviation="8"></feGaussianBlur>
-                        </filter>
-                    </defs>
-                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
-                    <polygon class="arrow" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
-                    <text x="50%" y="55%">Projects</text>
-                </svg>
-            </div>
-            <div class="sectionBody">
-                <div class="project" id="sgt"> <!-- SGT -->
+            <div class="project blueBorder grayBG" id="sgt"> <!-- SGT -->
+                <div class="projectDisplay">
                     <div class="projectPic">
                         <img src="images/sgtSquare.png">
                     </div>
-                    <div class="projectTitle">
-                        Student Grade Table
+                    <div class="projectButtons">
+                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                            View Project
+                        </button>
+                        <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
+                            Project Info
+                        </button>
+                        <!--TODO: ADD DESCRIPTION TO APPEAR WHEN USER HOVERS OVER PICTURE W/ LINK TO GITHUB & DEMO-->
                     </div>
                 </div>
-                <div class="project" id="scrappyLayouts"> <!-- SCRAPPY LAYOUTS -->
+                <div class="projectTitle">
+                    Student Grade Table
+                </div>
+            </div>
+            <div class="project blueBorder grayBG" id="memoryMatch"> <!-- MEMORY MATCH -->
+                <div class="projectDisplay">
                     <div class="projectPic">
-
+                        <img src="images/mmSquare.png">
                     </div>
-                    <div class="projectTitle">
-                        Scrappy Layouts
+                    <div class="projectButtons">
+                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                            View Project
+                        </button>
+                        <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
+                            Project Info
+                        </button>
+                        <!--TODO: ADD DESCRIPTION TO APPEAR WHEN USER HOVERS OVER PICTURE W/ LINK TO GITHUB & DEMO-->
                     </div>
                 </div>
-                <div class="project" id="calculator"> <!-- CALCULATOR -->
+                <div class="projectTitle">
+                    Memory Match
+                </div>
+            </div>
+            <div class="project blueBorder grayBG" id="ticTacToe"> <!-- TIC-TAC-TOE -->
+                <div class="projectDisplay">
+                    <div class="projectPic">
+                        <img src="images/tictactoeSquare.png">
+                    </div>
+                    <div class="projectButtons">
+                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                            View Project
+                        </button>
+                        <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
+                            Project Info
+                        </button>
+                        <!--TODO: ADD DESCRIPTION TO APPEAR WHEN USER HOVERS OVER PICTURE W/ LINK TO GITHUB & DEMO-->
+                    </div>
+                </div>
+                <div class="projectTitle">
+                    Tic-Tac-Toe
+                </div>
+            </div>
+            <div class="project blueBorder grayBG" id="calculator"> <!-- CALCULATOR -->
+                <div class="projectDisplay">
                     <div class="projectPic displayBottom">
                         <img src="images/calculatorSquare.png">
                     </div>
-                    <div class="projectTitle">
-                        Calculator
+                    <div class="projectButtons">
+                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                            View Project
+                        </button>
+                        <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
+                            Project Info
+                        </button>
+                        <!--TODO: ADD DESCRIPTION TO APPEAR WHEN USER HOVERS OVER PICTURE W/ LINK TO GITHUB & DEMO-->
                     </div>
                 </div>
-                <div class="project" id="ticTacToe"> <!-- TIC-TAC-TOE -->
-                    <div class="projectPic displayRight">
-                        <img src="images/tictactoeSquare.png">
-                    </div>
-                    <div class="projectTitle">
-                        Tic-Tac-Toe
-                    </div>
-                </div>
-                <div class="project" id="memoryMatch"> <!-- MEMORY MATCH -->
-                    <div class="projectPic">
-
-                    </div>
-                    <div class="projectTitle">
-                        Memory Match
-                    </div>
+                <div class="projectTitle">
+                    Calculator
                 </div>
             </div>
-        </section>
-        <section id="skills" class="page">
-            <div class="secTitle">
-                <svg width="60%" height="4em">
-                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
-                    <polygon class="arrow2" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
-                    <text x="50%" y="55%">Skill Set</text>
-                </svg>
-            </div>
-            <div class="sectionBody">
-                <div class="skill">Skill</div>
-                <div class="skill">Skill</div>
-                <div class="skill">Skill</div>
-                <div class="skill">Skill</div>
-                <div class="skill">Skill</div>
-                <div class="skill">Skill</div>
-            </div>
-        </section>
-        <section id="about" class="page">
-            <div class="secTitle">
-                <svg width="60%" height="4em">
-                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
-                    <polygon class="arrow" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
-                    <text x="50%" y="55%">About Me</text>
-                </svg>
-            </div>
-            <div class="sectionBody">
+        </div>
+    </section>
+    <section id="about" class="page grayBG">
+        <div class="secTitle">
+            <svg width="60%" height="4em">
+                <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
+                <polygon class="arrow" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
+                <text x="50%" y="55%">About Me</text>
+            </svg>
+        </div>
+        <div class="sectionBody">
+            <div class="aboutMeText blueBorder wineBG">
+                <img src="images/portfolioPic.png" class="profilePic blueBorder">
+                <p>
+                    I am a front-end developer in the Orange County area. I recently completed a three month web
+                    development bootcamp with LearningFuze in Irvine, CA &amp; am starting to  pursue a career in web
+                    development. I earned my Bachelor's Degree in Information Technology in 2014 and have previous experience
+                    as an accountant &amp; administrative assistant.
+                </p>
+                <p>
+                    When I am not coding I attempt to harness my creativity through photography, scrapbooking, &amp; drawing.
+                </p>
+
+                <a href="HeatherHernandezResume_Jan2016.pdf" target="_blank">
+                    <button type="button" class="btn btn-default resumeBtn">
+                        View Resume
+                    </button>
+                </a>
+
 
             </div>
-        </section>
-        <section id="contact" class="page">
-            <div class="secTitle">
-                <svg width="60%" height="4em">
-                    <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
-                    <polygon class="arrow2" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
-                    <text x="50%" y="55%">Contact</text>
-                </svg>
-            </div>
-            <div class="sectionBody">
+            <div class="skillBox">
+                <div class="blueBorder wineBG">
+                    <ul>
+                        <span class="listTitle">
+                            Front-End
+                        </span>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Javascript</li>
+                        <li>jQuery</li>
+                        <li>AngularJS</li>
 
+                    </ul>
+                </div>
+                <div class="blueBorder wineBG">
+                    <ul>
+                        <span class="listTitle">
+                            Development Tools
+                        </span>
+                        <li>Github</li>
+                        <li>Git</li>
+                        <li>Chrome DevTools</li>
+                        <li>PhpStorm</li>
+                        <li>Sublime Text</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <section id="contact" class="page wineBG">
+        <div class="secTitle">
+            <svg width="60%" height="4em">
+                <polygon class="shadow" points="21 28 60 0 1000 0 1000 45 50 45" filter="url(#shadow)"></polygon>
+                <polygon class="arrow" points="20 28 50 0 1000 0 1000 50 50 50"></polygon>
+                <text x="50%" y="55%">Contact</text>
+            </svg>
+        </div>
+        <div class="sectionBody">
+            <form id="contactForm" class="form-horizontal blueBorder grayBG" role="form" method="post" action="">
+                <div class="form-group">
+                    <input type="text" id="nameId" class="form-control"
+                           name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="emailAddress" class="form-control"
+                           name="emailAddress" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                            <textarea title="Message" id="message" class="form-control"
+                                      placeholder="Message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Send Message</button>
+            </form>
+            <div class="socialMediaLinks blueBorder grayBG">
+                <!-- GitHub Account -->
+                <a href="https://github.com/hhernandez008" target="_blank">
+                    <div class="label label-default contacts">
+                        <img src="images/GitHub-32px.png">
+                        &nbsp;
+                        GitHub
+                    </div>
+                </a>
+                <!-- Email -->
+                <a href="mailto:hhernandez008@gmail.com?Subject=Regarding%20your%20profile.">
+                    <div class="label label-default contacts">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        &nbsp;
+                        hhernandez008@gmail.com
+                    </div>
+                </a>
+                <!-- LinkedIn Account -->
+                <a href="https://www.linkedin.com/pub/heather-hernandez/17/932/60" target="_blank">
+                    <div class="label label-default contacts">
+                        <img src="images/LinkedIn-21px.png">
+                        &nbsp;
+                        LinkedIn
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+</div>
 
 </body>
 </html>

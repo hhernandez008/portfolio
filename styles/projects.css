@@ -1,60 +1,99 @@
-#projects{
-    background-color: #5B000E;
-}
 .project{
     width: 30%;
     height: 46%;
-    margin: 2% 1.5% 0 1.5%;
+    margin: 2%;
+    margin-bottom: 0;
     padding: 2% 1%;
-    border: 2px solid #0C032D;
-    border-radius: 5px;
-    box-shadow: 0 0 6px #1a1a1a;
-    background-color: #555555;
     text-align: center;
 }
-.projectPic{
+.projectDisplay{
     width: 96%;
     height: 80%;
     margin: 0 2% 5% 2%;
-    border: 0 double transparent;
+    border: 1px solid #555555;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px #262626;
     overflow: hidden;
+    position: relative;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease;
 }
-.projectPic:hover{
-    border: 5px double #5B000E;
-    box-shadow: none;
+.project:hover .projectDisplay{
+    border: 1px solid #0C032D;
 }
+
 .displayRight>img{
     float: right;
 }
 .displayBottom>img{
-    margin-top: -120%;
+    margin-top: -100%;
 }
-.displayBottom>img:hover{
-    margin-top: 0;
+.project:hover .displayBottom>img{
+    margin-top: -25%;
 }
 .projectPic>img{
-    width: 200%;
+    width: 170%;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     transition: 1s ease;
 }
-.projectPic>img:hover{
+.project:hover .projectPic>img{
     width: 100%;
     text-align: center;
     -webkit-filter: blur(2px);
 }
+.projectButtons{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    transition: 500ms ease;
+    opacity: 0;
+}
+.projectButtons>.btn-default{
+    width: 60%;
+    margin: 5%;
+    font-weight: normal;
+}
 
 .projectTitle{
-    color: #5B000E;
     font-family: Cardo, "Book Antiqua", serif;
     font-weight: bold;
     font-size: 1.6em;
 }
 
+.modal-title, .modal-body, .modal-footer{
+    color: #000000;
+}
+body.modal-open, .modal.fade.in{
+    padding: 0 !important;
+}
+
+.modal-dialog{
+    width: 90%;
+    height: 90%;
+}
+.modal-content{
+    width: 100%;
+    height: 100%;
+}
+.modal-body{
+    height: 75%;
+    overflow-y: scroll;
+}
 
 /* ~~ COLOR PALETTE ~~ */
 /* As hex codes */
@@ -82,35 +121,3 @@
 .rgba-secondary-1-2 { color: rgba( 36, 22, 90,1) }
 .rgba-secondary-1-3 { color: rgba( 12,  3, 45,1) }
 .rgba-secondary-1-4 { color: rgba(  6,  1, 25,1) }
-
-
-
-/* MODAL INDIVIDUAL PROJECTS */
-/*
-.singleProject{
-    width: 100%;
-    height: 88vh;
-    display: inline-flex;
-}
-.compScreen{
-    width: 45%;
-    position: relative;
-    top: 8%;
-    right: 43%;
-}
-.compScreen img{
-    width: 100%;
-}
-.description{
-    width: 50%;
-    height: 50%;
-    border: 15px double #141019;
-    border-radius: 15px;
-    background: rgba(157, 156, 156, 0.8);
-    padding: 2%;
-    padding-left: 7%;
-    position: relative;
-    top: 44%;
-    left: 45%;
-} */
-
