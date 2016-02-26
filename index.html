@@ -17,6 +17,7 @@
     <link rel="icon" type="image/x-icon" href="images/Hlogo-Black.ico">
     <title>Heather Hernandez</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -93,21 +94,11 @@
                             <div class="modal-title projectTitle">Modal Header</div>
                         </div>
                         <div class="modal-body">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio dolor, rutrum vitae aliquam et, varius at lorem. Phasellus convallis quam lorem, dapibus ornare mi facilisis eget. Morbi ultricies sem lorem, sit amet mollis dolor pulvinar ac. Nunc lorem risus, varius quis enim ac, tristique accumsan ante. Phasellus in mi mattis, aliquet libero in, ultrices lectus. Sed nec ullamcorper mi. Mauris venenatis interdum molestie. Ut eget mi nec leo tempus consequat. Cras quam arcu, pellentesque id fermentum tincidunt, auctor in nisi. Vestibulum lorem turpis, consectetur eu eros non, malesuada sodales ligula. Etiam efficitur porttitor ex eu eleifend. Etiam dignissim venenatis augue faucibus ornare. Mauris sollicitudin nunc vitae lectus luctus, quis pharetra risus interdum. Nulla ut velit vel nunc volutpat mollis in sodales quam. Maecenas porta ullamcorper diam commodo accumsan. Sed semper, lorem id porttitor porttitor, tellus lectus scelerisque sem, pellentesque tincidunt lacus ligula vel sem.
-                            </p>
-                            <p>
-                                Morbi aliquet felis sit amet justo ultricies feugiat. Aliquam mollis feugiat justo in vehicula. Mauris condimentum varius nibh, sit amet sollicitudin est laoreet quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras convallis, eros vel mattis lacinia, erat enim ultrices magna, in pretium odio nibh a ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut porta nisl efficitur lorem posuere, nec lobortis nibh mollis. Vivamus at risus non arcu lobortis pharetra.
-                            </p>
-                            <p>
-                                Morbi molestie rutrum sem sed malesuada. Maecenas ultrices semper vestibulum. Donec egestas lobortis purus, a consequat ante scelerisque nec. Donec quis lectus pretium, mollis enim eget, gravida velit. Vestibulum consequat tellus et nibh feugiat, ut mattis sapien tincidunt. Praesent egestas odio purus, nec porttitor tellus fermentum et. Morbi augue arcu, blandit non orci luctus, commodo luctus enim.
-                            </p>
-                            <p>
-                                Nulla faucibus mollis accumsan. Nullam malesuada consectetur nunc, vitae porta lacus vulputate ut. Suspendisse dignissim, neque eget ultrices lacinia, nisi velit sagittis tortor, vitae varius lacus felis et mauris. Mauris enim nisi, fermentum vitae placerat eu, aliquet sit amet orci. Duis turpis risus, sollicitudin bibendum elit sit amet, tristique sodales elit. Suspendisse potenti. Curabitur lectus quam, gravida in tellus eu, fringilla mattis mauris. Nulla ornare suscipit ipsum, non dictum erat pulvinar et. Phasellus malesuada interdum lacus in auctor. Nullam mauris neque, pellentesque eu euismod a, faucibus fermentum augue. Etiam ornare ut nunc eget accumsan. Nullam faucibus enim lacus, ut semper dui lobortis ac. Fusce ac eros vestibulum, rhoncus turpis ut, egestas est. Pellentesque vel nunc porttitor urna scelerisque sodales sit amet vitae est. Vivamus ultrices est justo, nec porttitor nunc hendrerit sed. Morbi auctor metus vel arcu pharetra, finibus tempor tellus pretium.
-                            </p>
-                            <p>
-                                Cras cursus ac diam et auctor. Donec nec iaculis diam. Fusce tincidunt elit neque, eu accumsan orci aliquam eget. Nulla lobortis euismod sapien, nec elementum elit lacinia a. Nulla sed quam sed leo malesuada commodo et sit amet arcu. Nam nibh libero, pretium eu nibh a, viverra accumsan eros. Aenean non sem accumsan, finibus sapien sit amet, elementum massa. Vivamus dapibus sapien eget semper interdum. Nam at nisi interdum leo hendrerit sodales. Etiam porttitor in neque in dignissim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque quis varius erat.
-                            </p>
+                            <p class="projectDescription"> </p>
+                            <p class="languagesUsed"> </p>
+                            <div class="projectImages">
+                                <img class="devices" src="">
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -116,15 +107,17 @@
 
                 </div>
             </div>
-            <div class="project blueBorder grayBG" id="sgt"> <!-- SGT -->
+            <div class="project blueBorder grayBG" id="studentGradeTable"> <!-- Student Grade Table -->
                 <div class="projectDisplay">
                     <div class="projectPic">
                         <img src="images/sgtSquare.png">
                     </div>
                     <div class="projectButtons">
-                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
-                            View Project
-                        </button>
+                        <a href="https://hhernandez008.github.io/studentGradeTable" target="_blank">
+                            <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                                View Project
+                            </button>
+                        </a>
                         <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
                             Project Info
                         </button>
@@ -141,9 +134,11 @@
                         <img src="images/mmSquare.png">
                     </div>
                     <div class="projectButtons">
-                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
-                            View Project
-                        </button>
+                        <a href="https://hhernandez008.github.io/memoryMatch" target="_blank">
+                            <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                                View Project
+                            </button>
+                        </a>
                         <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
                             Project Info
                         </button>
@@ -160,9 +155,11 @@
                         <img src="images/tictactoeSquare.png">
                     </div>
                     <div class="projectButtons">
-                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
-                            View Project
-                        </button>
+                        <a href="https://hhernandez008.github.io/tic-tac-toe" target="_blank">
+                            <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                                View Project
+                            </button>
+                        </a>
                         <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
                             Project Info
                         </button>
@@ -179,9 +176,11 @@
                         <img src="images/calculatorSquare.png">
                     </div>
                     <div class="projectButtons">
-                        <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
-                            View Project
-                        </button>
+                        <a href="https://hhernandez008.github.io/calculator" target="_blank">
+                            <button type="button" class="btn btn-default viewBtn"> <!-- Open project in window with back navigation -->
+                                View Project
+                            </button>
+                        </a>
                         <button type="button" class="btn btn-default infoBtn" data-toggle="modal" data-target="#projectModal">
                             Project Info
                         </button>

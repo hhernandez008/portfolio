@@ -27,7 +27,9 @@
 .form-control{
     border-color: #0C032D;;
 }
-
+textarea{
+    resize: none;
+}
 .socialMediaLinks{
     width: 90%;
     height: 10%;

@@ -148,7 +148,7 @@ li.smWords{
     background-color: #0C032D;
     transition: 500ms;
 }
-.btn-default:hover {
+.btn-default:hover, .btn-default:focus {
     color: #FFFFFF;
     background-color: #3C2D73;
     border-color: #24165A;
