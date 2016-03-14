@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "homepage": "http://www.heatherscodes.com",
+  "authors": [
+    "Heather Hernandez <hhernandez008@gmail.com>"
+  ],
+  "description": "heatherscodes.com portfolio website",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "portfolio"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

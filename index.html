@@ -5,10 +5,13 @@
     <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <link rel='stylesheet' type='text/css'
           href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Fira+Sans:400,400italic,700'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/aboutMe.css">
@@ -17,7 +20,7 @@
     <link rel="icon" type="image/x-icon" href="images/Hlogo-Black.ico">
     <title>Heather Hernandez</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="lodash.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -214,7 +217,7 @@
                     When I am not coding I attempt to harness my creativity through photography, scrapbooking, &amp; drawing.
                 </p>
 
-                <a href="HeatherHernandezResume_Jan2016.pdf" target="_blank">
+                <a href="HeatherHernandezResume.pdf" target="_blank">
                     <button type="button" class="btn btn-default resumeBtn">
                         View Resume
                     </button>
@@ -274,7 +277,7 @@
                             <textarea title="Message" id="message" class="form-control"
                                       placeholder="Message..."></textarea>
                 </div>
-                <button type="submit" class="btn btn-default">Send Message</button>
+                <button type="submit" id="submitMsg" class="btn btn-default">Send Message</button>
             </form>
             <div class="socialMediaLinks blueBorder grayBG">
                 <!-- GitHub Account -->

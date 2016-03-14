@@ -29,6 +29,9 @@ $("document").ready(function () {
         displayProjectInfo(this);
     });
 
+    $("#submitMsg").click(function(){
+        submitMessage();
+    });
 });
 
 function displayProjectInfo(button){
@@ -79,7 +82,7 @@ var projects = [
         "As the user makes matches the number of clues found increase until the case is solved (the game is won). The " +
         "user is then given the option to solve a new case or resolve the current case.",
         developmentLanguages: "HTML, CSS, Bootstrap, Javascript, and jQuery",
-        screenImagesSrc: ""
+        screenImagesSrc: "images/ProjectScreens/memoryMatchScreens.jpg"
     },
     {
         id: "ticTacToe",
@@ -101,3 +104,17 @@ var projects = [
         screenImagesSrc: "images/ProjectScreens/calcScreens.jpg"
     }
 ];
+
+var firebaseDataRef = new Firebase("https://portfoliomessages.firebaseio.com/");
+
+function submitMessage(){
+    var msgName = $("#nameId").val();
+    var msgEmail = $("#emailAddress").val();
+    var message = $("#message").val();
+    var data = {
+        "name": msgName,
+        "email": msgEmail,
+        "message": message
+    };
+    firebaseDataRef.push(data);
+}
