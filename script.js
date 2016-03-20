@@ -60,6 +60,12 @@ function displayProjectInfo(button){
     //Insert the image of the project on device screens
     $(".projectImages>.devices").attr("src", projects[projectIndex].screenImagesSrc);
 
+    //Insert the project link
+    $("#projectLink").attr("href", projects[projectIndex].projectLink);
+
+    //Insert the project github link
+    $("#projectGithubLink").attr("href", projects[projectIndex].githubLink);
+
 }
 
 var projects = [
@@ -72,7 +78,9 @@ var projects = [
         "previously entered data. The user can also filter the table to show only the desired student, course, or " +
         "grade. Or sort the table in ascending and descending order.",
         developmentLanguages: "HTML, CSS, Bootstrap, Javascript, and AngularJS",
-        screenImagesSrc: "images/ProjectScreens/sgtScreens.jpg"
+        screenImagesSrc: "images/ProjectScreens/sgtScreens.jpg",
+        projectLink: "http://www.heatherscodes.com/studentGradeTable",
+        githubLink: "https://github.com/hhernandez008/studentGradeTable"
     },
     {
         id: "memoryMatch",
@@ -82,7 +90,9 @@ var projects = [
         "As the user makes matches the number of clues found increase until the case is solved (the game is won). The " +
         "user is then given the option to solve a new case or resolve the current case.",
         developmentLanguages: "HTML, CSS, Bootstrap, Javascript, and jQuery",
-        screenImagesSrc: "images/ProjectScreens/memoryMatchScreens.jpg"
+        screenImagesSrc: "images/ProjectScreens/memoryMatchScreens.jpg",
+        projectLink: "http://www.heatherscodes.com/memoryMatch",
+        githubLink: "https://github.com/hhernandez008/memoryMatch"
     },
     {
         id: "ticTacToe",
@@ -94,14 +104,19 @@ var projects = [
         "to be the first player to get three in a row. Each player's turn is indicated by the highlighted barrel in the " +
         "top corners. Players can choose between a three in a row game or a five in a row game.",
         developmentLanguages: "HTML, CSS, Bootstrap, Javascript, and jQuery",
-        screenImagesSrc: "images/ProjectScreens/tictactoeScreens.jpg"
+        screenImagesSrc: "images/ProjectScreens/tictactoeScreens.jpg",
+        projectLink: "http://www.heatherscodes.com/tic-tac-toe",
+        githubLink: "https://github.com/hhernandez008/tic-tac-toe"
     },
     {
         id: "calculator",
         name: "Calculator",
-        description: "",
+        description: "The calculator web application provides the user with the ability to complete simple mathematical " +
+        "operations. The application was built as a way to develop my Javascript logic. ",
         developmentLanguages: "HTML, CSS, Bootstrap, Javascript, and jQuery",
-        screenImagesSrc: "images/ProjectScreens/calcScreens.jpg"
+        screenImagesSrc: "images/ProjectScreens/calcScreens.jpg",
+        projectLink: "http://www.heatherscodes.com/calculator",
+        githubLink: "https://github.com/hhernandez008/calculator"
     }
 ];
 

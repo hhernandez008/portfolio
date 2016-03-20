@@ -100,6 +100,26 @@ body.modal-open, .modal.fade.in{
 .modal-body p{
     text-indent: 2em;
 }
+.modalLinks{
+    text-align: center;
+}
+#projectLink:hover, #projectGithubLink:hover{
+    text-decoration: none;
+}
+.modalLinkBtn{
+    width: auto;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 2px 5px;
+    background-color: #5B000E;
+    border-color: #220005;
+    border-width: 2px;
+    transition: 500ms;
+}
+.modalLinkBtn:hover{
+    background-color: #9E3142;
+    border-color: #7B1223;
+}
 
 .projectImages>.devices{
     display: block;

@@ -143,9 +143,9 @@ li.smWords{
     font-weight: bold;
     font-size: 1.2em;
     color: #FFFFFF;
+    background-color: #0C032D;
     border-width: 2px;
     border-color: #060119;
-    background-color: #0C032D;
     transition: 500ms;
 }
 .btn-default:hover, .btn-default:focus {
@@ -164,16 +164,17 @@ li.smWords{
 #nameTitle, .subTitle{
     position: relative;
     top: 50%;
-    color: #ffffff;
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.7px #7B1223;
     transform: translateY(-50%);
 }
 #nameTitle{
     font-family: Cardo, "Book Antiqua", serif;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 .subTitle{
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 /* ~~ COLOR PALETTE ~~ */
