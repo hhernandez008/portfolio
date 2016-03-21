@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <link rel='stylesheet' type='text/css'
-          href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Fira+Sans:400,400italic,700'>
+          href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Fira+Sans:300,400,700'>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
@@ -25,7 +25,41 @@
 </head>
 <body>
 <!-- Navigation -->
-<div class="navCol navbar" role="navigation">
+<div class="navbar visible-xs" role="navigation">
+    <div class="navbar-header">
+        <div type="button" class="navbar-toggle wineBG" id="menuToggle">
+                <span class="icon-bar topBar leftHalf"></span>
+                <span class="icon-bar topBar rightHalf"></span>
+                <span class="icon-bar middleBar"></span>
+                <span class="icon-bar bottomBar leftHalf"></span>
+                <span class="icon-bar bottomBar rightHalf"></span>
+        </div>
+
+        <a class="navbar-brand logo" href="#top">
+            <img src="images/Hlogo.png">
+        </a>
+    </div>
+</div>
+<div id="navSlideOut" class="visible-xs">
+    <!--<button type="button" class="navClose">Close</button>-->
+    <nav role="navigation">
+        <ul class="nav navbar-nav links">
+            <li>
+                <a href="#top" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="navCol navbar hidden-xs hidden-print" role="navigation">
     <div class="logo">
         <a href="#top">
             <img src="images/Hlogo.png">
@@ -33,24 +67,16 @@
     </div>
     <ul class="nav navbar-nav links">
         <li class="active">
-            <a href="#top">
-                Home
-            </a>
+            <a href="#top">Home</a>
         </li>
         <li>
-            <a href="#projects">
-                Projects
-            </a>
+            <a href="#projects">Projects</a>
         </li>
         <li>
-            <a href="#about">
-                About Me
-            </a>
+            <a href="#about">About Me</a>
         </li>
         <li>
-            <a href="#contact">
-                Contact
-            </a>
+            <a href="#contact">Contact</a>
         </li>
         <li class="smWords">
             &copy; 2016
