@@ -1,12 +1,31 @@
 
 
 $("document").ready(function () {
+
+    //Open/Close the slide out nav menu when the hamburger button is clicked
+    $("#menuToggle").click(function(){
+       //check if the menu is open or closed
+        if($(this).hasClass("open")){
+            //close the menu
+            $(this).removeClass("open").addClass("closed");
+        } else {
+            //open the menu
+            $(this).removeClass("closed").addClass("open");
+        }
+
+    });
+
+    //Active scroll spy to show user which section they are viewing
     $("body").scrollspy({
-        target: ".navbar",
+        target: ".navCol",
         offset: 250
     });
+
+    //Add the currentSection class to the section opened on page load
     $("li.active > a").addClass("currentSection");
-    $(".navbar").on("activate.bs.scrollspy", function () {
+
+    //Change current section arrow indicator on scroll into new section
+    $(".navCol").on("activate.bs.scrollspy", function () {
         var $activeSection = $("li.active > a");
         $(".active").parent(".links")
             .find(".currentSection")
@@ -14,28 +33,36 @@ $("document").ready(function () {
         $($activeSection).addClass("currentSection");
     });
 
-
+    //TODO: Add when a user clicks for mobile and tablets (need to use a visibility hidden so buttons not accidently activated)
     //Display the project buttons on hover
     $(".project").mouseenter(function(){
        $(this).find(".projectButtons").attr("style", "opacity: 1");
     });
-
-    //Remove the mouse buttons when not hovered
+    //Remove the project buttons when not hovered
     $(".project").mouseleave(function(){
         $(this).find(".projectButtons").attr("style", "opacity: 0");
     });
 
+    //Open the project info modal
     $(".infoBtn").click(function(){
         displayProjectInfo(this);
     });
 
+    //Submit contact form
     $("#submitMsg").click(function(){
         submitMessage();
     });
 });
 
+/**
+ * Find the corresponding data to be entered into a modal window showing the project information
+ * based on the project info button pressed.
+ * @param button
+ */
 function displayProjectInfo(button){
+    //Determine the project id
     var clickedProjectID = $(button).parents(".project").attr("id");
+    //Find the corresponding project object
     var projectIndex = _.findIndex(projects, function(n) {
         return n.id == clickedProjectID;
     });
@@ -46,18 +73,21 @@ function displayProjectInfo(button){
     var descriptionParagraphs = projects[projectIndex].description;
     var breakStartIndex = descriptionParagraphs.search("(BREAK)");
     var breakEndIndex = breakStartIndex + 6;
+    //Edit the description to be inserted as html
     if( breakStartIndex == -1){
         descriptionParagraphs = "<p>" + descriptionParagraphs + "</p>";
     }else{
+        //if the keyword (BREAK) was in the description a new paragraph needs to be started in its place
         descriptionParagraphs = "<p>" + descriptionParagraphs.slice(0, breakStartIndex - 1) + "</p><p>" +
             descriptionParagraphs.slice(breakEndIndex + 1, descriptionParagraphs.length) + "</p>";
     }
+    //Insert the newly created html description
     $(".modal-body>.projectDescription").html(descriptionParagraphs);
 
     //Insert the Languages Used
     $(".modal-body>.languagesUsed").text(projects[projectIndex].developmentLanguages);
 
-    //Insert the image of the project on device screens
+    //Insert the project on device screen shots
     $(".projectImages>.devices").attr("src", projects[projectIndex].screenImagesSrc);
 
     //Insert the project link
@@ -68,6 +98,29 @@ function displayProjectInfo(button){
 
 }
 
+//database to collect user submited contact forms
+var firebaseDataRef = new Firebase("https://portfoliomessages.firebaseio.com/");
+
+/**
+ * Submit the user entered information from the contact form to the firebase database.
+ */
+function submitMessage(){
+    //TODO: verify the user entered information in all sections.
+
+    var msgName = $("#nameId").val();
+    var msgEmail = $("#emailAddress").val();
+    var message = $("#message").val();
+    var data = {
+        "name": msgName,
+        "email": msgEmail,
+        "message": message
+    };
+    //Push to the firebase array
+    firebaseDataRef.push(data);
+}
+
+
+// Project information objects
 var projects = [
     {
         id: "studentGradeTable",
@@ -119,17 +172,3 @@ var projects = [
         githubLink: "https://github.com/hhernandez008/calculator"
     }
 ];
-
-var firebaseDataRef = new Firebase("https://portfoliomessages.firebaseio.com/");
-
-function submitMessage(){
-    var msgName = $("#nameId").val();
-    var msgEmail = $("#emailAddress").val();
-    var message = $("#message").val();
-    var data = {
-        "name": msgName,
-        "email": msgEmail,
-        "message": message
-    };
-    firebaseDataRef.push(data);
-}

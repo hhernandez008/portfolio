@@ -4,14 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <link rel='stylesheet' type='text/css'
-          href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Fira+Sans:300,400,700'>
-
+          href='https://fonts.googleapis.com/css?family=Cardo:400,700|Fira+Sans:300,400,700'>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/aboutMe.css">
@@ -20,20 +14,25 @@
     <link rel="icon" type="image/x-icon" href="images/Hlogo-Black.ico">
     <title>Heather Hernandez</title>
 
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src="lodash.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
 <!-- Navigation -->
+<!-- MOBILE -->
 <div class="navbar visible-xs" role="navigation">
     <div class="navbar-header">
-        <div type="button" class="navbar-toggle wineBG" id="menuToggle">
+        <!-- Hamburger Button -->
+        <button type="button" class="wineBG closed" id="menuToggle">
                 <span class="icon-bar topBar leftHalf"></span>
                 <span class="icon-bar topBar rightHalf"></span>
                 <span class="icon-bar middleBar"></span>
                 <span class="icon-bar bottomBar leftHalf"></span>
                 <span class="icon-bar bottomBar rightHalf"></span>
-        </div>
+        </button>
 
         <a class="navbar-brand logo" href="#top">
             <img src="images/Hlogo.png">
@@ -45,7 +44,7 @@
     <nav role="navigation">
         <ul class="nav navbar-nav links">
             <li>
-                <a href="#top" class="active">Home</a>
+                <a href="#top">Home</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
@@ -59,6 +58,7 @@
         </ul>
     </nav>
 </div>
+<!-- End of Mobile navigation -->
 <div class="navCol navbar hidden-xs hidden-print" role="navigation">
     <div class="logo">
         <a href="#top">
