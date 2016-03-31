@@ -8,11 +8,17 @@ $("document").ready(function () {
         if($(this).hasClass("open")){
             //close the menu
             $(this).removeClass("open").addClass("closed");
+            $("#navSlideOut").removeClass("open");
         } else {
             //open the menu
             $(this).removeClass("closed").addClass("open");
+            $("#navSlideOut").addClass("open");
         }
-
+    });
+    //when any space inside the navSlideOut (including links) is clicked close the menu
+    $("#navSlideOut").click(function(){
+        $(this).removeClass("open");
+        $("#menuToggle").removeClass("open").addClass("closed");
     });
 
     //Active scroll spy to show user which section they are viewing
