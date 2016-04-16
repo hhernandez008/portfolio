@@ -1,112 +1,122 @@
-.project{
-    width: 30%;
-    height: 46%;
-    margin: 2%;
-    margin-bottom: 0;
+.project {
+    /*width: 90%;*/
+    height: 23vh;
+    margin: 3% 2%;
+    /*margin-bottom: 0;*/
     padding: 2% 1%;
     text-align: center;
 }
-.projectDisplay{
-    width: 96%;
-    height: 80%;
+
+.projectDisplay {
+    width: 45%;
+    height: 100%;
     margin: 0 2% 5% 2%;
-    border: 1px solid #555555;
+    border: 2px solid #0C032D;
     border-radius: 5px;
-    box-shadow: 0 0 5px 2px #262626;
+    /*box-shadow: 0 0 5px 2px #262626;*/
     overflow: hidden;
-    position: relative;
+    /*position: relative;*/
+    float: right;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
     -ms-transition: 1s ease;
     -o-transition: 1s ease;
     transition: 1s ease;
 }
-.project:hover .projectDisplay{
-    border: 1px solid #0C032D;
+
+.project:hover .projectDisplay {
+    /*border: 1px solid #0C032D;*/
 }
 
-.displayRight>img{
+.displayRight > img {
     float: right;
 }
-.displayBottom>img{
+
+.displayBottom > img {
     margin-top: -85%;
 }
-.project:hover .displayBottom>img{
-    margin-top: -25%;
+
+.project:hover .displayBottom > img {
+    /*margin-top: -25%;*/
 }
-.projectPic>img{
+
+.projectPic > img {
     width: 170%;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     transition: 1s ease;
 }
-.project:hover .projectPic>img{
-    width: 100%;
-    text-align: center;
-    -webkit-filter: blur(2px);
+
+.project:hover .projectPic > img {
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*-webkit-filter: blur(2px);*/
 }
-.projectButtons{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: 500ms ease;
-    -moz-transition: 500ms ease;
-    -ms-transition: 500ms ease;
-    -o-transition: 500ms ease;
-    transition: 500ms ease;
-    opacity: 0;
+.projectButtons {
+    width: 50%;
 }
-.projectButtons .btn-default{
+.projectButtons.visible-xs button {
+    /* display: inline-block; */
+    /* width: 48%; */
+    /* overflow-wrap: break-word; */
+    font-weight: normal;
+    font-size: 1em;
+    padding: 3px 12px;
+    margin: 3px 2px;
+}
+}
+
+.projectButtons .btn-default {
     width: 60%;
     margin: 5%;
     font-weight: normal;
 }
 
-.projectTitle{
+.projectTitle {
     font-family: Cardo, "Book Antiqua", serif;
     font-weight: bold;
     font-size: 1.6em;
 }
 
 /* Project Modal */
-
-.modal-title, .modal-body, .modal-footer{
+.modal-title, .modal-body, .modal-footer {
     color: #000000;
 }
-body.modal-open, .modal.fade.in{
+
+body.modal-open, .modal.fade.in {
     padding: 0 !important;
 }
 
-#projectModal .modal-dialog{
+#projectModal .modal-dialog {
     width: 90%;
     max-height: 90%;
     /*transform: translate(0,50%);*/
 }
-.modal-content{
+
+.modal-content {
     width: 100%;
     height: 90vh;
 }
-.modal-body{
+
+.modal-body {
     height: 75%;
     overflow-y: scroll;
 }
-.modal-body p{
+
+.modal-body p {
     text-indent: 2em;
 }
-.modalLinks{
+
+.modalLinks {
     text-align: center;
 }
-#projectLink:hover, #projectGithubLink:hover{
+
+#projectLink:hover, #projectGithubLink:hover {
     text-decoration: none;
 }
-.modalLinkBtn{
+
+.modalLinkBtn {
     width: auto;
     font-size: 1em;
     font-weight: normal;
@@ -116,16 +126,164 @@ body.modal-open, .modal.fade.in{
     border-width: 2px;
     transition: 500ms;
 }
-.modalLinkBtn:hover{
+
+.modalLinkBtn:hover {
     background-color: #9E3142;
     border-color: #7B1223;
 }
 
-.projectImages>.devices{
+.projectImages > .devices {
     display: block;
     margin: 0 auto;
     max-height: 55vh;
 
+}
+
+@media (min-width: 768px) {
+    .project {
+        width: 30%;
+        height: 46%;
+        margin: 2%;
+        margin-bottom: 0;
+        padding: 2% 1%;
+        text-align: center;
+    }
+
+    .projectDisplay {
+        width: 96%;
+        height: 80%;
+        margin: 0 2% 5% 2%;
+        border: 1px solid #555555;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 2px #262626;
+        overflow: hidden;
+        position: relative;
+        -webkit-transition: 1s ease;
+        -moz-transition: 1s ease;
+        -ms-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .project:hover .projectDisplay {
+        border: 1px solid #0C032D;
+    }
+
+    .displayRight > img {
+        float: right;
+    }
+
+    .displayBottom > img {
+        margin-top: -85%;
+    }
+
+    .project:hover .displayBottom > img {
+        margin-top: -25%;
+    }
+
+    .projectPic > img {
+        width: 170%;
+        -webkit-transition: 1s ease;
+        -moz-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .project:hover .projectPic > img {
+        width: 100%;
+        text-align: center;
+        -webkit-filter: blur(2px);
+    }
+
+    .projectButtons {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: 500ms ease;
+        -moz-transition: 500ms ease;
+        -ms-transition: 500ms ease;
+        -o-transition: 500ms ease;
+        transition: 500ms ease;
+        opacity: 0;
+    }
+
+    .projectButtons .btn-default {
+        width: 60%;
+        margin: 5%;
+        font-weight: normal;
+    }
+
+    .projectTitle {
+        font-family: Cardo, "Book Antiqua", serif;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+
+    /* Project Modal */
+    .modal-title, .modal-body, .modal-footer {
+        color: #000000;
+    }
+
+    body.modal-open, .modal.fade.in {
+        padding: 0 !important;
+    }
+
+    #projectModal .modal-dialog {
+        width: 90%;
+        max-height: 90%;
+        /*transform: translate(0,50%);*/
+    }
+
+    .modal-content {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .modal-body {
+        height: 75%;
+        overflow-y: scroll;
+    }
+
+    .modal-body p {
+        text-indent: 2em;
+    }
+
+    .modalLinks {
+        text-align: center;
+    }
+
+    #projectLink:hover, #projectGithubLink:hover {
+        text-decoration: none;
+    }
+
+    .modalLinkBtn {
+        width: auto;
+        font-size: 1em;
+        font-weight: normal;
+        margin: 2px 5px;
+        background-color: #5B000E;
+        border-color: #220005;
+        border-width: 2px;
+        transition: 500ms;
+    }
+
+    .modalLinkBtn:hover {
+        background-color: #9E3142;
+        border-color: #7B1223;
+    }
+
+    .projectImages > .devices {
+        display: block;
+        margin: 0 auto;
+        max-height: 55vh;
+
+    }
 }
 /* ~~ COLOR PALETTE ~~ */
 /* As hex codes */
